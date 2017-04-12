@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExigoOrdersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ExigoOrdersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OrderItems" EntityType="ExigoOrdersModel.OrderItem" />
+    <EntitySet Name="Orders" EntityType="ExigoOrdersModel.Order" />
+    <AssociationSet Name="FK_OrderItem_Orders" Association="ExigoOrdersModel.FK_OrderItem_Orders">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderItem" EntitySet="OrderItems" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="OrderItemID" />
+    </Key>
+    <Property Name="OrderItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Image" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Order" Relationship="ExigoOrdersModel.FK_OrderItem_Orders" FromRole="OrderItem" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNumber" Type="Int32" Nullable="false" />
+    <Property Name="OrderNumberPrefix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrderNumberPostfix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModified" Type="DateTime" Precision="3" />
+    <Property Name="StatusCode" Type="Int32" />
+    <Property Name="CustomerID" Type="Int32" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingCompany" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingStreet1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingStreet2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingStreet3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingCity" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingState" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingPostalCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="BillingFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingCompany" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingStreet1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingStreet2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingStreet3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingCity" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingState" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BillingPostalCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BillingCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BillingPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BillingEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="PaymentMethod" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreditCardType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreditCardOwner" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreditCardNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreditCardExpires" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ShippingCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsOrderSent" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Tracking" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Carrier" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ShippingDate" Type="DateTime" Precision="3" />
+    <Property Name="ProcessedDate" Type="DateTime" Precision="3" />
+    <Property Name="Voided" Type="Boolean" />
+    <Property Name="VoidedDate" Type="DateTime" Precision="3" />
+    <Property Name="VoidedUser" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ServiceUsed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TotalCharges" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ReturnShipment" Type="Boolean" />
+    <NavigationProperty Name="OrderItems" Relationship="ExigoOrdersModel.FK_OrderItem_Orders" FromRole="Order" ToRole="OrderItem" />
+  </EntityType>
+  <Association Name="FK_OrderItem_Orders">
+    <End Type="ExigoOrdersModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="ExigoOrdersModel.OrderItem" Role="OrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="OrderItem">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

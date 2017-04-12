@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\ExigoAPI</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>04/06/2017 10:45:24</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 21:13:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>04/06/2017 10:45:24</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/04/2015 06:13:34</publishTime>
+    </File>
+    <File Include="bin/ExigoIntegration.Data.dll">
+      <publishTime>04/07/2017 19:29:37</publishTime>
+    </File>
+    <File Include="bin/ExigoIntegration.dll">
+      <publishTime>04/08/2017 12:24:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 14:36:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/24/2012 03:53:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/04/2014 09:03:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/19/2015 08:49:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/19/2015 08:49:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 16:34:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 16:32:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/12/2014 03:56:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 16:32:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 16:34:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 16:34:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 16:34:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/11/2013 05:58:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/06/2017 10:44:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/06/2017 15:22:42</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/06/2017 10:44:52</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>04/06/2017 10:44:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>04/06/2017 10:44:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>04/06/2017 10:44:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>04/06/2017 10:45:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>04/06/2017 10:45:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>04/06/2017 10:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>04/06/2017 10:45:07</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>04/06/2017 10:45:05</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>04/06/2017 10:45:06</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>04/06/2017 10:45:06</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>04/06/2017 10:45:05</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AddPartyGuestsResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AddPartyGuestsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AddProductsToCategoryResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AddProductsToCategoryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AdjustInventoryResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AdjustInventoryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AppendCustomerNotesResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AppendCustomerNotesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthenticateCustomerResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthenticateCustomerResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthenticateUserResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthenticateUserResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthorizeOnlyCreditCardResponse.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthorizeOnlyCreditCardTokenOnFileResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.AuthorizeOnlyCreditCardTokenResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CalculateOrderResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CalculateOrderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChangeAutoOrderStatusResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChangeAutoOrderStatusResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChangeOrderStatusBatchResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChangeOrderStatusBatchResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChangeOrderStatusResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChangeOrderStatusResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeCreditCardOnFileResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeCreditCardResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeCreditCardResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeCreditCardTokenOnFileResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeCreditCardTokenResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeGroupOrderCreditCardTokenResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeGroupOrderCreditCardTokenResponse1.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargePriorAuthorizationResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeWalletAccountOnFileResponse.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeWalletAccountResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ChargeWalletAccountResponse1.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateAutoOrderResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateAutoOrderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateBillResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateBillResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCalendarItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCalendarItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerBalanceAdjustmentResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerBalanceAdjustmentResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerContactResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerContactResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerExtendedResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerExtendedResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerFileResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerFileResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerInquiryResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerInquiryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerLeadResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerLeadResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerWallItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateCustomerWallItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateEmailResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateEmailResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateEmailTemplateResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateEmailTemplateResponse1.datasource">
+      <publishTime>04/06/2017 11:18:34</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateExpectedBankWireResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateExpectedBankWireResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateExpectedPaymentResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateExpectedPaymentResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateGuestResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateGuestResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateMailFolderResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateMailFolderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateOrderImportResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateOrderImportResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateOrderResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateOrderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePartyResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePartyResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentCheckResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentCheckResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentCreditCardResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentCreditCardResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentPointAccountResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentPointAccountResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePaymentWalletResponse.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePayoutResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePayoutResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePointTransactionResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreatePointTransactionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateVendorBillResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateVendorBillResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateWebCategoryResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.CreateWebCategoryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DebitBankAccountOnFileResponse.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DebitBankAccountResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DebitBankAccountResponse1.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCalendarItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCalendarItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerContactResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerContactResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerExtendedResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerExtendedResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerLeadResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerLeadResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerWallItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteCustomerWallItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteEmailResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteEmailResponse1.datasource">
+      <publishTime>04/06/2017 11:18:34</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteEmailTemplateResponse.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteEmailTemplateResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteMailFolderResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteMailFolderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteProductFromCategoryResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteProductFromCategoryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteQualificationOverrideResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteQualificationOverrideResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteWebCategoryResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DeleteWebCategoryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DequeueCustomerEventsResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.DequeueCustomerEventsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.EmptyMailFolderResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.EmptyMailFolderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.EnsureMailFoldersResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.EnsureMailFoldersResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.FireResponderResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.FireResponderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetAccountDirectDepositResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetAccountDirectDepositResponse1.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetAutoOrdersResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetAutoOrdersResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetBinaryPreferenceResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetBinaryPreferenceResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCompanyLanguagesResponse.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCompanyNewsItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCompanyNewsItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCompanyNewsResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCompanyNewsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCountryRegionsResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCountryRegionsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerBalancesResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerBalancesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerBillingResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerBillingResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerExtendedResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerExtendedResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerLeadSocialNetworksResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerLeadSocialNetworksResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerLeadsResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerLeadsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerNotesResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerNotesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerSiteResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerSiteResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerSocialNetworksResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerSocialNetworksResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomersResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomersResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerWallResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomerWallResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomReportResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetCustomReportResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetDownlineResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetDownlineResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetEmailAttachmentResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetEmailAttachmentResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetFileContentsResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetFileContentsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetFilesResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetFilesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetGuestSocialNetworksResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetGuestSocialNetworksResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetGuestsResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetGuestsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetItemCountryRegionResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetItemCountryRegionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetItemsResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetItemsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetLanguagesResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetLoginSessionResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetLoginSessionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetOrdersResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetOrdersResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetOrderTotalsResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetOrderTotalsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPartiesResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPartiesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPartyGuestsResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPartyGuestsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPaymentsResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPaymentsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPointAccountResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetPointAccountResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetQualificationOverridesResponse.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetQualitificationOverridesResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRandomMessageResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRandomMessageResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRankQualificationsResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRankQualificationsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRealTimeCommissionDetailResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRealTimeCommissionDetailResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRealTimeCommissionsResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetRealTimeCommissionsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetReportResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetReportResponse1.datasource">
+      <publishTime>04/06/2017 11:18:25</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetSessionResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetSessionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetShipMethodsResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetShipMethodsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetShoppingCartResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetShoppingCartResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetSubscriptionResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetSubscriptionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetUplineResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetUplineResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetUserPermissionsResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetUserPermissionsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetVolumesResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetVolumesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetWarehousesResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.GetWarehousesResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.LoginCustomerResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.LoginCustomerResponse1.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.MergeCustomerResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.MergeCustomerResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.MoveEmailResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.MoveEmailResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptInEmailResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptInEmailResponse1.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptInSmsResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptInSmsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptOutEmailResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptOutEmailResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptOutSmsResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.OptOutSmsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceBinaryNodeResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceBinaryNodeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceEnrollerNodeResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceEnrollerNodeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceMatrixNodeResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceMatrixNodeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceStackNodeResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceStackNodeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceUniLevelNodeResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.PlaceUniLevelNodeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ProcessTransactionResponse.datasource">
+      <publishTime>04/06/2017 11:18:28</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.RefundPriorCreditCardChargeResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.RefundPriorCreditCardChargeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.RefundPriorWalletChargeResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.RefundPriorWalletChargeResponse1.datasource">
+      <publishTime>04/06/2017 11:18:26</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.RemovePartyGuestsResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.RemovePartyGuestsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SendSmsResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SendSmsResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetAccountCheckingResponse.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetAccountCreditCardResponse.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetAccountCreditCardTokenResponse.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetAccountDirectDepositResponse.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetAccountResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetAccountWalletResponse.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetBinaryPreferenceResponse.datasource">
+      <publishTime>04/06/2017 11:18:11</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetBinaryPreferenceResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerLeadSocialNetworksResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerLeadSocialNetworksResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerSiteImageResponse.datasource">
+      <publishTime>04/06/2017 11:18:12</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerSiteImageResponse1.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerSiteResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerSiteResponse1.datasource">
+      <publishTime>04/06/2017 11:18:27</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerSocialNetworksResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetCustomerSocialNetworksResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetGuestSocialNetworksResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetGuestSocialNetworksResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemCountryRegionResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemCountryRegionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemImageResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemImageResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemPriceResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemPriceResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemWarehouseResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetItemWarehouseResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetQualificationOverrideResponse.datasource">
+      <publishTime>04/06/2017 11:18:13</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetQualificationOverrideResponse1.datasource">
+      <publishTime>04/06/2017 11:18:23</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetSessionResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.SetSessionResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.TransactionalResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCalendarItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCalendarItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerContactResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerContactResponse1.datasource">
+      <publishTime>04/06/2017 11:18:32</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerExtendedResponse.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerExtendedResponse1.datasource">
+      <publishTime>04/06/2017 11:18:24</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerLeadResponse.datasource">
+      <publishTime>04/06/2017 11:18:16</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerLeadResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateCustomerResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateEmailStatusResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateEmailStatusResponse1.datasource">
+      <publishTime>04/06/2017 11:18:33</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateEmailTemplateResponse.datasource">
+      <publishTime>04/06/2017 11:18:08</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateEmailTemplateResponse1.datasource">
+      <publishTime>04/06/2017 11:18:34</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateGuestResponse.datasource">
+      <publishTime>04/06/2017 11:18:14</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateGuestResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateItemResponse.datasource">
+      <publishTime>04/06/2017 11:18:18</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateItemResponse1.datasource">
+      <publishTime>04/06/2017 11:18:21</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateMailFolderResponse.datasource">
+      <publishTime>04/06/2017 11:18:15</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateMailFolderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateOrderResponse.datasource">
+      <publishTime>04/06/2017 11:18:17</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateOrderResponse1.datasource">
+      <publishTime>04/06/2017 11:18:29</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdatePartyResponse.datasource">
+      <publishTime>04/06/2017 11:18:19</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdatePartyResponse1.datasource">
+      <publishTime>04/06/2017 11:18:22</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateWebCategoryResponse.datasource">
+      <publishTime>04/06/2017 11:18:09</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.UpdateWebCategoryResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ValidateResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.ValidateResponse1.datasource">
+      <publishTime>04/06/2017 11:18:30</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.VerifyAddressResponse.datasource">
+      <publishTime>04/06/2017 11:18:10</publishTime>
+    </File>
+    <File Include="Service References/Exigo/ExigoIntegration.Exigo.VerifyAddressResponse1.datasource">
+      <publishTime>04/06/2017 11:18:31</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/06/2017 10:44:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/07/2017 19:30:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

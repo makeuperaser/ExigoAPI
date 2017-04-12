@@ -1,0 +1,7 @@
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\bin\Debug\ExigoIntegration.Data.dll
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\bin\Debug\ExigoIntegration.Data.pdb
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\obj\Debug\ExigoIntegration.Data.dll
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\obj\Debug\ExigoIntegration.Data.pdb
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\bin\Debug\ExigoIntegration.Data.dll.config
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\bin\Debug\EntityFramework.dll
+D:\Mayur\TFS_Projects\ExigoIntegration\ExigoIntegration.Data\bin\Debug\EntityFramework.xml

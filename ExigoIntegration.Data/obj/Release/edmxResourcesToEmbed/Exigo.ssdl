@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExigoOrdersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="OrderItemID" />
+    </Key>
+    <Property Name="OrderItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="varchar" MaxLength="50" />
+    <Property Name="ProductID" Type="varchar" MaxLength="50" />
+    <Property Name="Code" Type="varchar" MaxLength="200" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Image" Type="varchar" MaxLength="250" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+    <Property Name="OrderNumberPrefix" Type="varchar" MaxLength="100" />
+    <Property Name="OrderNumberPostfix" Type="varchar" MaxLength="100" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="StatusCode" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="ShippingFullName" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingCompany" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingStreet1" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingStreet2" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingStreet3" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingCity" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingState" Type="varchar" MaxLength="200" />
+    <Property Name="ShippingPostalCode" Type="varchar" MaxLength="20" />
+    <Property Name="ShippingCountry" Type="varchar" MaxLength="100" />
+    <Property Name="ShippingPhone" Type="varchar" MaxLength="20" />
+    <Property Name="ShippingEmail" Type="varchar" MaxLength="250" />
+    <Property Name="BillingFullName" Type="varchar" MaxLength="200" />
+    <Property Name="BillingCompany" Type="varchar" MaxLength="200" />
+    <Property Name="BillingStreet1" Type="varchar" MaxLength="200" />
+    <Property Name="BillingStreet2" Type="varchar" MaxLength="200" />
+    <Property Name="BillingStreet3" Type="varchar" MaxLength="200" />
+    <Property Name="BillingCity" Type="varchar" MaxLength="200" />
+    <Property Name="BillingState" Type="varchar" MaxLength="200" />
+    <Property Name="BillingPostalCode" Type="varchar" MaxLength="20" />
+    <Property Name="BillingCountry" Type="varchar" MaxLength="100" />
+    <Property Name="BillingPhone" Type="varchar" MaxLength="20" />
+    <Property Name="BillingEmail" Type="varchar" MaxLength="250" />
+    <Property Name="PaymentMethod" Type="varchar" MaxLength="100" />
+    <Property Name="CreditCardType" Type="varchar" MaxLength="50" />
+    <Property Name="CreditCardOwner" Type="varchar" MaxLength="200" />
+    <Property Name="CreditCardNumber" Type="varchar" MaxLength="50" />
+    <Property Name="CreditCardExpires" Type="varchar" MaxLength="20" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ShippingCost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsOrderSent" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Tracking" Type="varchar" MaxLength="50" />
+    <Property Name="Carrier" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingDate" Type="datetime" />
+    <Property Name="ProcessedDate" Type="datetime" />
+    <Property Name="Voided" Type="bit" />
+    <Property Name="VoidedDate" Type="datetime" />
+    <Property Name="VoidedUser" Type="varchar" MaxLength="100" />
+    <Property Name="ServiceUsed" Type="varchar" MaxLength="100" />
+    <Property Name="TotalCharges" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalWeight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ReturnShipment" Type="bit" />
+  </EntityType>
+  <Association Name="FK_OrderItem_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="OrderItem">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ExigoOrdersModelStoreContainer">
+    <EntitySet Name="OrderItem" EntityType="Self.OrderItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_OrderItem_Orders" Association="Self.FK_OrderItem_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderItem" EntitySet="OrderItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

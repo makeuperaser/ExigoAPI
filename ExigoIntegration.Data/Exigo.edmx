@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ExigoOrdersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="OrderItem">
+          <Key>
+            <PropertyRef Name="OrderItemID" />
+          </Key>
+          <Property Name="OrderItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="ItemID" Type="varchar" MaxLength="50" />
+          <Property Name="ProductID" Type="varchar" MaxLength="50" />
+          <Property Name="Code" Type="varchar" MaxLength="200" />
+          <Property Name="Name" Type="varchar" MaxLength="200" />
+          <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Image" Type="varchar" MaxLength="250" />
+          <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderNumber" Type="int" Nullable="false" />
+          <Property Name="OrderNumberPrefix" Type="varchar" MaxLength="100" />
+          <Property Name="OrderNumberPostfix" Type="varchar" MaxLength="100" />
+          <Property Name="OrderDate" Type="datetime" />
+          <Property Name="LastModified" Type="datetime" />
+          <Property Name="StatusCode" Type="int" />
+          <Property Name="CustomerID" Type="int" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="ShippingFullName" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingCompany" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingStreet1" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingStreet2" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingStreet3" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingCity" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingState" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingPostalCode" Type="varchar" MaxLength="20" />
+          <Property Name="ShippingCountry" Type="varchar" MaxLength="100" />
+          <Property Name="ShippingPhone" Type="varchar" MaxLength="20" />
+          <Property Name="ShippingEmail" Type="varchar" MaxLength="250" />
+          <Property Name="BillingFullName" Type="varchar" MaxLength="200" />
+          <Property Name="BillingCompany" Type="varchar" MaxLength="200" />
+          <Property Name="BillingStreet1" Type="varchar" MaxLength="200" />
+          <Property Name="BillingStreet2" Type="varchar" MaxLength="200" />
+          <Property Name="BillingStreet3" Type="varchar" MaxLength="200" />
+          <Property Name="BillingCity" Type="varchar" MaxLength="200" />
+          <Property Name="BillingState" Type="varchar" MaxLength="200" />
+          <Property Name="BillingPostalCode" Type="varchar" MaxLength="20" />
+          <Property Name="BillingCountry" Type="varchar" MaxLength="100" />
+          <Property Name="BillingPhone" Type="varchar" MaxLength="20" />
+          <Property Name="BillingEmail" Type="varchar" MaxLength="250" />
+          <Property Name="PaymentMethod" Type="varchar" MaxLength="100" />
+          <Property Name="CreditCardType" Type="varchar" MaxLength="50" />
+          <Property Name="CreditCardOwner" Type="varchar" MaxLength="200" />
+          <Property Name="CreditCardNumber" Type="varchar" MaxLength="50" />
+          <Property Name="CreditCardExpires" Type="varchar" MaxLength="20" />
+          <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ShippingCost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="IsOrderSent" Type="bit" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="Tracking" Type="varchar" MaxLength="50" />
+          <Property Name="Carrier" Type="varchar" MaxLength="50" />
+          <Property Name="ShippingDate" Type="datetime" />
+          <Property Name="ProcessedDate" Type="datetime" />
+          <Property Name="Voided" Type="bit" />
+          <Property Name="VoidedDate" Type="datetime" />
+          <Property Name="VoidedUser" Type="varchar" MaxLength="100" />
+          <Property Name="ServiceUsed" Type="varchar" MaxLength="100" />
+          <Property Name="TotalCharges" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ReturnShipment" Type="bit" />
+        </EntityType>
+        <Association Name="FK_OrderItem_Orders">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+          <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderItem">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ExigoOrdersModelStoreContainer">
+          <EntitySet Name="OrderItem" EntityType="Self.OrderItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_OrderItem_Orders" Association="Self.FK_OrderItem_Orders">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="OrderItem" EntitySet="OrderItem" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ExigoOrdersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ExigoOrdersEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="OrderItems" EntityType="ExigoOrdersModel.OrderItem" />
+          <EntitySet Name="Orders" EntityType="ExigoOrdersModel.Order" />
+          <AssociationSet Name="FK_OrderItem_Orders" Association="ExigoOrdersModel.FK_OrderItem_Orders">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="OrderItem" EntitySet="OrderItems" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="OrderItem">
+          <Key>
+            <PropertyRef Name="OrderItemID" />
+          </Key>
+          <Property Name="OrderItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="ItemID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProductID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Image" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="Order" Relationship="ExigoOrdersModel.FK_OrderItem_Orders" FromRole="OrderItem" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderNumber" Type="Int32" Nullable="false" />
+          <Property Name="OrderNumberPrefix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OrderNumberPostfix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OrderDate" Type="DateTime" Precision="3" />
+          <Property Name="LastModified" Type="DateTime" Precision="3" />
+          <Property Name="StatusCode" Type="Int32" />
+          <Property Name="CustomerID" Type="Int32" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingCompany" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingStreet1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingStreet2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingStreet3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingCity" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingState" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingPostalCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="BillingFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingCompany" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingStreet1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingStreet2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingStreet3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingCity" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingState" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BillingPostalCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BillingCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BillingPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BillingEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentMethod" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CreditCardType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreditCardOwner" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CreditCardNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreditCardExpires" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ShippingCost" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IsOrderSent" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Tracking" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Carrier" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ShippingDate" Type="DateTime" Precision="3" />
+          <Property Name="ProcessedDate" Type="DateTime" Precision="3" />
+          <Property Name="Voided" Type="Boolean" />
+          <Property Name="VoidedDate" Type="DateTime" Precision="3" />
+          <Property Name="VoidedUser" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ServiceUsed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TotalCharges" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ReturnShipment" Type="Boolean" />
+          <NavigationProperty Name="OrderItems" Relationship="ExigoOrdersModel.FK_OrderItem_Orders" FromRole="Order" ToRole="OrderItem" />
+        </EntityType>
+        <Association Name="FK_OrderItem_Orders">
+          <End Type="ExigoOrdersModel.Order" Role="Order" Multiplicity="1" />
+          <End Type="ExigoOrdersModel.OrderItem" Role="OrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderItem">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ExigoOrdersModelStoreContainer" CdmEntityContainer="ExigoOrdersEntities">
+          <EntitySetMapping Name="OrderItems">
+            <EntityTypeMapping TypeName="ExigoOrdersModel.OrderItem">
+              <MappingFragment StoreEntitySet="OrderItem">
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="ExigoOrdersModel.Order">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="ReturnShipment" ColumnName="ReturnShipment" />
+                <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+                <ScalarProperty Name="TotalCharges" ColumnName="TotalCharges" />
+                <ScalarProperty Name="ServiceUsed" ColumnName="ServiceUsed" />
+                <ScalarProperty Name="VoidedUser" ColumnName="VoidedUser" />
+                <ScalarProperty Name="VoidedDate" ColumnName="VoidedDate" />
+                <ScalarProperty Name="Voided" ColumnName="Voided" />
+                <ScalarProperty Name="ProcessedDate" ColumnName="ProcessedDate" />
+                <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+                <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+                <ScalarProperty Name="Tracking" ColumnName="Tracking" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="IsOrderSent" ColumnName="IsOrderSent" />
+                <ScalarProperty Name="ShippingCost" ColumnName="ShippingCost" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="CreditCardExpires" ColumnName="CreditCardExpires" />
+                <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+                <ScalarProperty Name="CreditCardOwner" ColumnName="CreditCardOwner" />
+                <ScalarProperty Name="CreditCardType" ColumnName="CreditCardType" />
+                <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+                <ScalarProperty Name="BillingEmail" ColumnName="BillingEmail" />
+                <ScalarProperty Name="BillingPhone" ColumnName="BillingPhone" />
+                <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingStreet3" ColumnName="BillingStreet3" />
+                <ScalarProperty Name="BillingStreet2" ColumnName="BillingStreet2" />
+                <ScalarProperty Name="BillingStreet1" ColumnName="BillingStreet1" />
+                <ScalarProperty Name="BillingCompany" ColumnName="BillingCompany" />
+                <ScalarProperty Name="BillingFullName" ColumnName="BillingFullName" />
+                <ScalarProperty Name="ShippingEmail" ColumnName="ShippingEmail" />
+                <ScalarProperty Name="ShippingPhone" ColumnName="ShippingPhone" />
+                <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+                <ScalarProperty Name="ShippingPostalCode" ColumnName="ShippingPostalCode" />
+                <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+                <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+                <ScalarProperty Name="ShippingStreet3" ColumnName="ShippingStreet3" />
+                <ScalarProperty Name="ShippingStreet2" ColumnName="ShippingStreet2" />
+                <ScalarProperty Name="ShippingStreet1" ColumnName="ShippingStreet1" />
+                <ScalarProperty Name="ShippingCompany" ColumnName="ShippingCompany" />
+                <ScalarProperty Name="ShippingFullName" ColumnName="ShippingFullName" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="OrderNumberPostfix" ColumnName="OrderNumberPostfix" />
+                <ScalarProperty Name="OrderNumberPrefix" ColumnName="OrderNumberPrefix" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
