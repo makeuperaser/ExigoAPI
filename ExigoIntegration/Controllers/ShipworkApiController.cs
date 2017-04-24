@@ -283,6 +283,13 @@ namespace ExigoIntegration.Controllers
                             //Submit the request to the server
                             ChangeOrderStatusResponse orderStatusRes = client.ChangeOrderStatus(auth, orderStatusReq);
                             if (orderStatusRes.Result.Status == ResultStatus.Success) { }
+							
+							UpdateOrderRequest updateOrderReq = new UpdateOrderRequest();
+                            updateOrderReq.OrderID = OrderID;
+                            updateOrderReq.TrackingNumber1 = tracking;
+
+                            UpdateOrderResponse updateOrderRes = client.UpdateOrder(auth, updateOrderReq);
+                            if (updateOrderRes.Result.Status == ResultStatus.Success) { }
                         }
                         string XML = "<?xml version=\"1.0\"?>" +
                             "<ShipWorks schemaVersion=\"1.1.0\" moduleVersion=\"3.10.0\">" +
