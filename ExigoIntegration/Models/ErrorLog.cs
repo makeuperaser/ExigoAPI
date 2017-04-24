@@ -54,6 +54,8 @@ namespace ExigoIntegration.Models
                     .AppendLine("----------")
                     .AppendLine(DateTime.Now.ToString())
                     .AppendFormat("Message:\t{0}", Message)
+                    .AppendLine()
+                    .AppendFormat("Time:\t{0}", DateTime.Now)
                     .AppendLine();
 
                 string filePath = HttpContext.Current.Server.MapPath("~/Error-" + DateTime.Now.ToString("MM-yyyy") + ".log");
